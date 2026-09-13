@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script>
+  Babel.registerPreset("my-preset", {
+    presets: [
+      [Babel.availablePresets["react"], { runtime: "classic" }]
+    ],
+    plugins: [
+      [Babel.availablePlugins["transform-typescript"], { isTSX: true }]
+    ]
+  });
+</script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="my-preset">
+  type MyType = 'hello';
+  const a: MyType = 'hello';
+  const el = <div>{a}</div>;
+  console.log(el);
+</script>
+</body>
+</html>

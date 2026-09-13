@@ -1,0 +1,8 @@
+{
+  "name": "ExpenseIQ",
+  "description": "Mint \u0026 White personal finance dashboard in Indian Rupee (₹) featuring 50/30/20 budget analysis, Category Budget vs Actual tracking, dark and light mode, analytics trends, and cloud sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
